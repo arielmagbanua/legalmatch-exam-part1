@@ -5,3 +5,7 @@
 body {
   scroll-behavior: smooth;
 }
+
+li > svg {
+  padding-right: 6px;
+}
