@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "lawyer": {
+      "name": "Mitchel M.",
+      "type": "Family Law",
+      "city": "Cherry Hill",
+      "state": "NJ",
+      "photo": "mitchel.png"
+    },
+    "overall": 5,
+    "reviews": [
+      {
+        "stars": 5,
+        "name": "Dexter Marchal",
+        "comment": "This lawyer exceeded my expectations. I found Attorney Mullen to be very reliable, courteous, prompt, candid, and prudent.",
+        "date": "06/10/2016"
+      },
+      {
+        "stars": 4,
+        "name": "Wei Foo",
+        "comment": "Responded in a timely manner.",
+        "date": "06/9/2016"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "lawyer": {
+      "name": "J.C",
+      "type": "Job & Employment Law",
+      "city": "Little Rock",
+      "state": "AR",
+      "photo": "joel.png"
+    },
+    "overall": 5,
+    "reviews": [
+      {
+        "stars": 5,
+        "name": "Dexter Marchal",
+        "comment": "He is a kind of lawyer who would sit down and explain things on how things works in legal matter but he is so mysterious!",
+        "date": "06/10/2016"
+      },
+      {
+        "stars": 4,
+        "name": "Dexter Foo",
+        "comment": "Responded in a timely manner.",
+        "date": "06/9/2016"
+      },
+      {
+        "stars": 5,
+        "name": "James Barr",
+        "comment": "Answered questions clearly",
+        "date": "06/8/2016"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "lawyer": {
+      "name": "Brigida R.",
+      "type": "Family Law",
+      "city": "Dallas",
+      "state": "TX",
+      "photo": "brigida.png"
+    },
+    "overall": 5,
+    "reviews": [
+      {
+        "stars": 5,
+        "name": "Dexter Marchal",
+        "comment": "Deb did a great job. Got my bench warrant aside... was sure I was going to jail... phew. Judge seemed to respect her and got what I want.",
+        "date": "06/10/2016"
+      },
+      {
+        "stars": 4,
+        "name": "Dexter Marchal Foo",
+        "comment": "Responded in a timely manner.",
+        "date": "06/9/2016"
+      },
+      {
+        "stars": 5,
+        "name": "Dexter Marchal Bar",
+        "comment": "Answered questions clearly",
+        "date": "06/8/2016"
+      },
+      {
+        "stars": 4,
+        "name": "Dexter Marchal Baz",
+        "comment": "Understood needs",
+        "date": "06/7/2016"
+      },
+      {
+        "stars": 5,
+        "name": "Dexter Marchal Hello",
+        "comment": "Gave complete and clear information",
+        "date": "06/6/2016"
+      },
+      {
+        "stars": 4,
+        "name": "Dexter Marchal Hi",
+        "comment": "Knowledgeable in legal area",
+        "date": "06/5/2016"
+      },
+      {
+        "stars": 5,
+        "name": "Max Marchal",
+        "comment": "Good value for money",
+        "date": "06/4/2016"
+      },
+      {
+        "stars": 4,
+        "name": "Dom Marchal",
+        "comment": "Would hire again",
+        "date": "06/3/2016"
+      },
+      {
+        "stars": 5,
+        "name": "Maximus Marchal",
+        "comment": "Would recommend do friend",
+        "date": "06/2/2016"
+      }
+    ]
+  }
+]
