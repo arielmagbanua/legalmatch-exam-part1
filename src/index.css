@@ -9,3 +9,7 @@ body {
 li > svg {
   padding-right: 6px;
 }
+
+.app__container {
+  background: radial-gradient(circle at bottom center, #2c69cb, #032c6b);
+}
