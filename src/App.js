@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import logo from "./assets/logo.svg";
 import CheckList from "./components/CheckList";
+import MainContent from "./components/MainContent";
 
 function App() {
   const guarantees = [
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <div className="app">
-      <NavBar logo={logo}>
+      <div className="app__container">
+        <NavBar logo={logo} className="app__nav-bar bg-white">
         <div className="flex grow-0 items-center">
           <p className="uppercase text-xl text-center text-blue-900">
             Find the right lawyer now
@@ -21,6 +23,8 @@ function App() {
           <CheckList items={guarantees}/>
         </div>
       </NavBar>
+      <MainContent className="app__container__main-content"/>
+      </div>
     </div>
   );
 }
