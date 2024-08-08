@@ -60,7 +60,7 @@ function Review({data, className}) {
 
   const modal = (
     <Modal onClose={handleClose} actionBar={modalActionBar} title="Client Reviews">
-      <div className="flex justify-start items-center pb-6">
+      <div className="flex justify-start items-center py-6">
         <ProfileImage imageSrc={lawyer.photo} alt={lawyer.name}/>
         <div className="ml-6 grow grid grid-cols-1">
           <p className="text-left text-2xl">{lawyer.name}</p>

@@ -6,7 +6,7 @@ import usZips from "../data/uszips.csv";
 import useDismissTarget from "../hooks/dissmiss-target";
 
 function AutoCompleteInput({className, icon, label, placeholder}) {
-  const classes = classNames('grid grid-cols-1 px-20', className);
+  const classes = classNames('grid grid-cols-1', className);
 
   const [keyword, setKeyword] = useState('');
   const [zipCodes, setZipCodes] = useState([]);

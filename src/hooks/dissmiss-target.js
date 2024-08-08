@@ -1,5 +1,6 @@
 import {useEffect} from "react";
 
+// this is to dismiss a target when user clicked other than the target
 function useDismissTarget(target, showTarget) {
   useEffect(() => {
     const handler = (event) => {

@@ -1,9 +1,12 @@
 import classNames from "classnames";
 
-function TextInput({className, label, icon, placeholder, onChange, value}) {
+function TextInput({className, label, icon, placeholder, onChange, value, disabled = false}) {
   const classes = classNames('flex flex-col flex-nowrap w-full', className);
 
   const handleOnChange = (event) => {
+    if (!onChange) {
+      return;
+    }
     onChange(event.target.value);
   }
 
@@ -20,6 +23,7 @@ function TextInput({className, label, icon, placeholder, onChange, value}) {
           placeholder={placeholder}
           onChange={handleOnChange}
           value={value}
+          disabled={disabled}
         />
       </div>
     </div>
