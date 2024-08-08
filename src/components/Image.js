@@ -1,5 +1,3 @@
-import classNames from 'classnames';
-
 function Image({ src, alt, className }) {
   return (
     <>

@@ -6,7 +6,7 @@ function CompanyLogo({logo, tagline, className}) {
 
   return (
     <div className={classes}>
-      <Image src={logo} alt="logo" className="w-72 px-4"/>
+      <Image src={logo} alt="logo" className="w-72 px-4 pb-2"/>
       <p className="uppercase text-center text-blue-900">
         {tagline}
       </p>

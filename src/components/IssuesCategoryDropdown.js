@@ -78,9 +78,18 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
     })
   );
 
+  const modalClasses = classNames(
+    'inset-x-[490px] inset-y-[260px]',
+    '2xl:inset-x-[420px] inset-y-[260px]',
+    'xl:inset-x-[320px] inset-y-[260px]',
+    'lg:inset-x-[220px] inset-y-[260px]',
+    'md:inset-x-[85px] inset-y-[260px]',
+    'sm:inset-x-[20px] inset-y-[260px]'
+  );
+
   const categoryModal = selectedCategory && (
     <Modal
-      className="modal__content--issue-category sm:inset-x-10 lg:inset-x-96 lg:inset-y-72 sm:inset-y-8 md:inset-y-44 inset-x-96 inset-y-72"
+      className={modalClasses}
       onClose={handleClose}
       actionBar={categoryModalActionBar}
     >
