@@ -5,7 +5,7 @@ import trusteLogo from "../assets/truste-logo.webp";
 import bbbLogo from "../assets/bbb-logo.png";
 import {FaCircle} from "react-icons/fa";
 
-function Footer({logo, className, children}) {
+function Footer({logo, className}) {
   const classes = classNames('flex items-start justify-center p-12 px-36', className);
 
   return (
