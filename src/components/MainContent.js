@@ -4,7 +4,7 @@ import Reviews from "./Reviews";
 import reviewsData from "../data/reviews.json"
 
 function MainContent({className}) {
-  const classes = classNames('container mx-auto px-8', className);
+  const classes = classNames('container mx-auto px-8 py-10', className);
 
   return (
     <main className={classes}>
@@ -19,7 +19,7 @@ function MainContent({className}) {
           <p className="text-center text-white">Can't find your category? Click here.</p>
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-left p-4 text-white">
+          <p className="text-left text-base p-4 text-white">
             Clients review LegalMatch lawyers
           </p>
 
