@@ -1,8 +1,11 @@
 import classNames from "classnames";
 
-function TextInput({className, label, icon, placeholder}) {
-  const classes = classNames('flex flex-col px-20 w-full', className);
+function TextInput({className, label, icon, placeholder, onChange, value}) {
+  const classes = classNames('flex flex-col flex-nowrap w-full', className);
 
+  const handleOnChange = (event) => {
+    onChange(event.target.value);
+  }
 
   return (
     <div className={classes}>
@@ -15,6 +18,8 @@ function TextInput({className, label, icon, placeholder}) {
           type="text"
           className="block w-full h-12 rounded-3xl border-0 py-1.5 pl-14 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 focus:outline"
           placeholder={placeholder}
+          onChange={handleOnChange}
+          value={value}
         />
       </div>
     </div>
