@@ -2,6 +2,7 @@ import classNames from "classnames";
 import TextInput from "./TextInput";
 import Reviews from "./Reviews";
 import reviewsData from "../data/reviews.json"
+import AutoCompleteInput from "./AutoCompleteInput";
 
 function MainContent({className}) {
   const classes = classNames('container mx-auto px-8 py-10', className);
@@ -14,8 +15,8 @@ function MainContent({className}) {
       </article>
       <section className="grid grid-cols-2 py-4 px-8">
         <div className="flex flex-col justify-center">
-          <TextInput label="Enter Zip Code or City:" icon="1" className="text-white pb-8" placeholder="Does not have to be where you live"/>
-          <TextInput label="Choose a category:" icon="2" className="text-white pb-8" placeholder="Click to choose a legal category"/>
+          <AutoCompleteInput icon="1" className="text-white mb-8" label="Enter Zip Code or City:" placeholder="Does not have to be where you live"/>
+          <TextInput label="Choose a category:" icon="2" className="text-white pb-8 px-20" placeholder="Click to choose a legal category"/>
           <p className="text-center text-white">Can't find your category? Click here.</p>
         </div>
         <div className="flex flex-col justify-center">
