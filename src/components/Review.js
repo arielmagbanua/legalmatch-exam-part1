@@ -30,7 +30,7 @@ function Review({data, className}) {
   // render the sorted reviews for modal
   const renderedSortedReviews = sortedReviews.map((review, index) => {
     return (
-      <div className="flex justify-between flex-nowrap items-center" key={index}>
+      <div className="flex justify-between flex-nowrap items-center" key={`${lawyer.id}_${index}`}>
         <p className="text-sm py-0.5">{review.comment}</p>
         <StarRating rating={review.stars} className="ml-4"/>
       </div>

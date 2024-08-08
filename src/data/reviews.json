@@ -2,6 +2,7 @@
   {
     "id": 1,
     "lawyer": {
+      "id": 111,
       "name": "Mitchel M.",
       "type": "Family Law",
       "city": "Cherry Hill",
@@ -27,6 +28,7 @@
   {
     "id": 2,
     "lawyer": {
+      "id": 222,
       "name": "J.C",
       "type": "Job & Employment Law",
       "city": "Little Rock",
@@ -58,6 +60,7 @@
   {
     "id": 3,
     "lawyer": {
+      "id": 333,
       "name": "Brigida R.",
       "type": "Family Law",
       "city": "Dallas",
