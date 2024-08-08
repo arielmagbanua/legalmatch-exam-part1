@@ -81,7 +81,9 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
   const categoryModal = selectedCategory && (
     <Modal
       className="modal__content--issue-category sm:inset-x-10 lg:inset-x-96 lg:inset-y-72 sm:inset-y-8 md:inset-y-44 inset-x-96 inset-y-72"
-      onClose={handleClose} actionBar={categoryModalActionBar}>
+      onClose={handleClose}
+      actionBar={categoryModalActionBar}
+    >
       <div className="flex items-center justify-start mb-8">
         <span className="mx-3 mr-4 text-white bg-amber-500 px-2.5 py-1 rounded-3xl text-xs">
           3

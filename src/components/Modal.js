@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import {MdClose} from "react-icons/md";
 import classNames from "classnames";
 
-function Modal({children, title, onClose, actionBar, className}) {
+function Modal({children, title, subTitle, onClose, actionBar, className}) {
   useBodyOverflowHidden();
 
   const modalContainerClasses = classNames(
@@ -12,10 +12,21 @@ function Modal({children, title, onClose, actionBar, className}) {
   );
 
   let renderedTitleBar = null;
-  if (title) {
+  if (title && !subTitle) {
     renderedTitleBar = (
       <div className="modal__content__title border-b border-black py-1 pb-2 flex justify-between items-center">
         <p className="uppercase text-xl">{title}</p>
+        <MdClose className="text-xl cursor-pointer" onClick={onClose}/>
+      </div>
+    );
+  } else if (title && subTitle) {
+    renderedTitleBar = (
+      <div className="modal__content__title border-b border-black py-1 pb-2 flex justify-between items-center">
+        <div className="flex flex-col flex-nowrap items-start justify-start">
+          <p className="uppercase text-xl">{title}</p>
+          <p className="text-xs">{subTitle}</p>
+        </div>
+
         <MdClose className="text-xl cursor-pointer" onClick={onClose}/>
       </div>
     );
