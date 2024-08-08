@@ -30,7 +30,7 @@ function Review({data, className}) {
   // render the sorted reviews for modal
   const renderedSortedReviews = sortedReviews.map((review, index) => {
     return (
-      <div className="flex justify-between flex-nowrap items-center" key={index}>
+      <div className="flex justify-between flex-nowrap items-center" key={`${lawyer.id}_${index}`}>
         <p className="text-sm py-0.5">{review.comment}</p>
         <StarRating rating={review.stars} className="ml-4"/>
       </div>
@@ -60,7 +60,7 @@ function Review({data, className}) {
 
   const modal = (
     <Modal onClose={handleClose} actionBar={modalActionBar} title="Client Reviews">
-      <div className="flex justify-start items-center pb-6">
+      <div className="flex justify-start items-center py-6">
         <ProfileImage imageSrc={lawyer.photo} alt={lawyer.name}/>
         <div className="ml-6 grow grid grid-cols-1">
           <p className="text-left text-2xl">{lawyer.name}</p>

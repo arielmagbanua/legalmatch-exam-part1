@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Family",
+    "issues": [
+      "Adoptions",
+      "Guardianship",
+      "Child Custody and Visitation",
+      "Paternity",
+      "Child Support",
+      "Separations",
+      "Divorce",
+      "Spousal Support or Alimony"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Criminal Defense",
+    "issues": [
+      "Robbery",
+      "Murder",
+      "Homicide",
+      "Child abuse",
+      "Assault",
+      "Arson",
+      "Manslaughter"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Business",
+    "issues": [
+      "Taxation",
+      "Permits",
+      "Safety",
+      "Embezzlement",
+      "Fraud"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Personal Injury",
+    "issues": [
+      "Insurance",
+      "Benefits"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Bankruptcy & Finances",
+    "issues": [
+      "Bankruptcy",
+      "Business Insurance"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Products & Services",
+    "issues": [
+      "Warranties",
+      "Consumer protection"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Employment",
+    "issues": [
+      "Contracts",
+      "Abuse",
+      "Taxation",
+      "Benefits",
+      "Insurance",
+      "Severance package"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Real Estate",
+    "issues": [
+      "Mortgage",
+      "Amortization",
+      "Land use"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Immigration",
+    "issues": [
+      "Immigrant benefits",
+      "Citizenship",
+      "Registration"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Wills, Trusts, and Estates",
+    "issues": [
+      "Last Will",
+      "Trust",
+      "Estate Guardianship",
+      "Trust Funds"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Government",
+    "issues": [
+      "IRS",
+      "Taxation",
+      "DMV"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Intellectual Property",
+    "issues": [
+      "Plagiarism",
+      "Patents",
+      "Troll Patents"
+    ]
+  }
+]

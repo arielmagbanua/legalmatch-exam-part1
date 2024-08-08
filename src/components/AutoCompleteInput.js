@@ -1,16 +1,20 @@
 import TextInput from "./TextInput";
 import classNames from "classnames";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import parser from "papaparse";
 import usZips from "../data/uszips.csv";
+import useDismissTarget from "../hooks/dissmiss-target";
 
 function AutoCompleteInput({className, icon, label, placeholder}) {
-  const classes = classNames('grid grid-cols-1 px-20', className);
+  const classes = classNames('grid grid-cols-1', className);
 
   const [keyword, setKeyword] = useState('');
   const [zipCodes, setZipCodes] = useState([]);
   const [filteredZipCodes, setFilteredZipCodes] = useState([]);
   const [showSuggestion, setShowSuggestion] = useState(false);
+
+  const suggestionBox = useRef();
+  useDismissTarget(suggestionBox, setShowSuggestion);
 
   useEffect(() => {
     parser.parse(usZips, {
@@ -92,7 +96,7 @@ function AutoCompleteInput({className, icon, label, placeholder}) {
   });
 
   const renderedSuggestions = showSuggestion && (
-    <div className="relative z-20">
+    <div ref={suggestionBox} className="relative z-20">
       <div className="absolute w-full bg-white rounded-2xl shadow-sm px-6 py-2">
         <div className="flex flex-col">
           <ol className="text-black">

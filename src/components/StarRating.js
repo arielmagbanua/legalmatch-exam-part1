@@ -1,12 +1,20 @@
 import {GoStarFill} from "react-icons/go";
 import classNames from "classnames";
+import generateUUIDv4 from "../utils/uuid"
 
-function StarRating({rating, className, max = 5, activeColor = 'text-amber-500', inactiveColor = 'text-gray-500'}) {
+function StarRating({rating, className, keyPrefix, max = 5, activeColor = 'text-amber-500', inactiveColor = 'text-gray-500'}) {
   const classes = classNames('grid grid-cols-5 gap-1', className)
 
   const createStars = (count, color) => {
     return [...Array(count).keys()].map((_, index) => {
-      return <GoStarFill className={color} key={index}/>
+      if (!keyPrefix) {
+        // generate a unique key
+        keyPrefix = generateUUIDv4();
+      } else {
+        keyPrefix = `${keyPrefix}_${index}`;
+      }
+
+      return <GoStarFill className={color} key={keyPrefix}/>
     });
   }
 
