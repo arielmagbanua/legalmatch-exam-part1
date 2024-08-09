@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/legalmatch-exam-part1/static/css/main.9dfe1315.css",
-    "main.js": "/legalmatch-exam-part1/static/js/main.326d9311.js",
+    "main.js": "/legalmatch-exam-part1/static/js/main.fbfc9832.js",
     "static/js/453.8091ec07.chunk.js": "/legalmatch-exam-part1/static/js/453.8091ec07.chunk.js",
     "static/media/uszips.csv": "/legalmatch-exam-part1/static/media/uszips.6670f986e2b90bb206a7.csv",
     "static/media/bbb-logo.png": "/legalmatch-exam-part1/static/media/bbb-logo.3e0769bcf567a9121b27.png",
@@ -10,11 +10,11 @@
     "static/media/empty-avatar.svg": "/legalmatch-exam-part1/static/media/empty-avatar.7a69ff0b8fcc1d201dc171fe657f3b7a.svg",
     "index.html": "/legalmatch-exam-part1/index.html",
     "main.9dfe1315.css.map": "/legalmatch-exam-part1/static/css/main.9dfe1315.css.map",
-    "main.326d9311.js.map": "/legalmatch-exam-part1/static/js/main.326d9311.js.map",
+    "main.fbfc9832.js.map": "/legalmatch-exam-part1/static/js/main.fbfc9832.js.map",
     "453.8091ec07.chunk.js.map": "/legalmatch-exam-part1/static/js/453.8091ec07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9dfe1315.css",
-    "static/js/main.326d9311.js"
+    "static/js/main.fbfc9832.js"
   ]
 }
