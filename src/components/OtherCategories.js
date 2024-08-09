@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import {useMemo, useState} from "react";
+import {useState} from "react";
 import Modal from "./Modal";
 import otherCategories from "../data/otherCategories.json";
 

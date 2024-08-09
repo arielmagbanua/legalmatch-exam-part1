@@ -7,8 +7,6 @@ import Modal from "./Modal";
 import CheckBox from "./CheckBox";
 
 function IssuesCategoryDropdown({className, icon, label, placeholder}) {
-  const classes = classNames('grid grid-cols-1 px-20', className);
-
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showCategoryModal, setShowCategoryModal] = useState(false);
@@ -78,6 +76,8 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
     })
   );
 
+  const issuesCategoryClasses = classNames('grid grid-cols-1 px-20', className);
+
   const modalClasses = classNames(
     'inset-x-[490px] inset-y-[260px]',
     '2xl:inset-x-[420px] inset-y-[260px]',
@@ -108,7 +108,7 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
   );
 
   return (
-    <div className={classes}>
+    <div className={issuesCategoryClasses}>
       <div className="flex flex-col flex-nowrap w-full mb-1">
         <label className="block text-base font-medium leading-6">{label}</label>
         <div

@@ -1,7 +1,8 @@
 import CompanyLogo from "./CompanyLogo";
 import classNames from "classnames";
+import CheckList from "./CheckList";
 
-function Header({children, logo, className}) {
+function Header({logo, className}) {
   const navBarContentWrapperClasses = classNames(
     '2xl:container 2xl:px-4',
     'xl:container xl:px-4',
@@ -29,6 +30,11 @@ function Header({children, logo, className}) {
     'xs:flex xs:grow-0 xs:justify-center xs:pb-4'
   );
 
+  const guarantees = [
+    'No fee to present your case',
+    'Choose from lawyers in your area',
+    'A 100% confidential service'
+  ];
 
   return (
     <header className={className}>
@@ -37,7 +43,9 @@ function Header({children, logo, className}) {
           <div className={navBarContentClasses}>
             <CompanyLogo className="p-8 md:p-6 sm:px-4 xs:px-2" logo={logo} tagline="Find the right lawyer now"/>
             <div className={childrenClasses}>
-              {children}
+              <div className="flex grow items-center justify-end">
+                <CheckList items={guarantees}/>
+              </div>
             </div>
           </div>
         </div>
