@@ -22,9 +22,20 @@ function OtherCategories({className}) {
     );
   })
 
+  const otherCategoriesModalClasses = classNames(
+    'modal__content--issue-category',
+    'inset-x-[480px] inset-y-32',
+    '2xl:inset-x-[420px] 2xl:inset-y-60',
+    'xl:inset-x-[320px] xl:inset-y-60',
+    'lg:inset-x-[220px] lg:inset-y-60',
+    'md:inset-x-[85px] md:inset-y-60',
+    'sm:inset-x-[20px] sm:inset-y-60',
+    'xs:inset-x-[20px] xs:inset-y-60'
+  );
+
   const otherCategoriesModal = showOtherCategoryModal && (
     <Modal
-      className="modal__content--issue-category sm:inset-x-10 lg:inset-x-96 lg:inset-y-72 sm:inset-y-8 md:inset-y-44 inset-x-96 inset-y-72"
+      className={otherCategoriesModalClasses}
       onClose={handleClose}
       title="Other Categories"
       subTitle="Choose the category that best fits your case"

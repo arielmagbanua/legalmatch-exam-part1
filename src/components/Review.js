@@ -60,11 +60,12 @@ function Review({data, className}) {
 
   const modalClasses = classNames(
     'inset-x-[480px] inset-y-32',
-    '2xl:inset-x-[420px] inset-y-32',
-    'xl:inset-x-[320px] inset-y-32',
-    'lg:inset-x-[220px] inset-y-32',
-    'md:inset-x-[85px] inset-y-32',
-    'sm:inset-x-[20px] inset-y-32'
+    '2xl:inset-x-[420px] 2xl:inset-y-32',
+    'xl:inset-x-[320px] xl:inset-y-32',
+    'lg:inset-x-[220px] lg:inset-y-32',
+    'md:inset-x-[85px] md:inset-y-32',
+    'sm:inset-x-[20px] sm:inset-y-32',
+    'xs:inset-x-[20px] xs:inset-y-32'
   );
 
   const modal = (

@@ -7,12 +7,12 @@ import {FaCircle} from "react-icons/fa";
 
 function Footer({logo, className}) {
   const mainWrapperClasses = classNames(
-    'flex items-start justify-center p-12 px-36',
-    '2xl:flex 2xl:items-start 2xl:justify-center 2xl:p-12 2xl:px-12',
-    'xl:flex xl:items-start xl:justify-center xl:p-8 xl:px-12',
-    'lg:flex lg:items-start lg:justify-center lg:p-8 lg:px-12',
-    'md:flex md:items-start md:justify-center md:p-4 md:px-8',
-    'sm:flex sm:items-start sm:justify-center sm:p-2 md:px-6',
+    '2xl:flex 2xl:flex-row 2xl:items-start 2xl:justify-center 2xl:p-12 2xl:px-12',
+    'xl:flex xl:flex-row xl:items-start xl:justify-center xl:p-12 xl:px-12',
+    'lg:flex lg:flex-row lg:items-start lg:justify-center lg:p-8 lg:px-12',
+    'md:flex md:flex-row md:items-start md:justify-center md:p-4 md:px-8',
+    'sm:flex 2xl:flex-row sm:items-start sm:justify-center sm:p-2 md:px-6',
+    'xs:flex xs:flex-col sm:items-center xs:justify-center xs:p-2 xs:px-6',
     className
   );
 
@@ -22,16 +22,18 @@ function Footer({logo, className}) {
     'xl:grow',
     'lg:grow-0',
     'md:grow-0',
-    'sm:grow-0'
+    'sm:grow-0 xs:pt-2',
+    'xs:grow-0 xs:pt-2'
   );
 
-  const allrightsStatementClasses = classNames(
+  const allRightsStatementClasses = classNames(
     'w-[34rem] text-wrap text-center text-gray-500',
     '2xl:w-[34rem]',
     'xl:w-[34rem]',
-    'lg:w-[34rem]',
+    'lg:w-[28rem]',
     'md:w-[22rem]',
-    'sm:w-[22rem]',
+    'sm:w-full',
+    'xs:w-full'
   );
 
   return (
@@ -51,19 +53,20 @@ function Footer({logo, className}) {
           <FaCircle className="text-sm text-gray-500 mr-2"/>
           <p className="cursor-pointer text-sm text-gray-500">Site Map</p>
         </div>
-        <div className={allrightsStatementClasses}>
+        <div className={allRightsStatementClasses}>
           <p className="text-sm">
             Copyright 1999-2016 LegalMatch. All rights reserved. ®, the LegalMatch logo, and the tradedress are
             trademarks of LegalMatch. Patents Pending.
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-72">
-        <Image className="w-28 mb-3" src={trusteLogo}/>
-        <Image className="w-28" src={bbbLogo}/>
+      <div
+        className="flex flex-col items-center justify-center 2xl:w-72 xl:w-72 lg:w-72 md:w-56 xs:w-full sm:w-full md:pt-2 xs:pt-6 sm:pt-6 xs:pb-4 sm:pb-4">
+        <Image className="w-28 xs:w-48 sm:w-48 mb-3" src={trusteLogo}/>
+        <Image className="w-28 xs:w-48 sm:w-48" src={bbbLogo}/>
       </div>
     </div>
   );
 }
 
-export default Footer
+export default Footer;

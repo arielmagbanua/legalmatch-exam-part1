@@ -21,8 +21,9 @@ function MainContent({className}) {
     '2xl:grid 2xl:grid-cols-2 2xl:py-4 2xl:px-8',
     'xl:grid xl:grid-cols-2 xl:py-4 xl:px-8',
     'lg:grid lg:grid-cols-2 lg:py-4 lg:px-1',
-    'md:grid md:grid-cols-2 md:py-4 md:px-1',
-    'sm:grid sm:grid-cols-1 sm:py-4 sm:px-1',
+    'md:grid md:grid-cols-1 md:py-4 md:px-6',
+    'sm:grid sm:grid-cols-1 sm:py-4 sm:px-6',
+    'xs:grid xs:grid-cols-1 xs:py-4 xs:px-1',
   );
 
   return (
@@ -35,19 +36,19 @@ function MainContent({className}) {
         <div className="flex flex-col justify-center sm:mb-4">
           <AutoCompleteInput
             icon="1"
-            className="text-white mb-8 px-20"
+            className="text-white mb-8 px-20 md:px-10 sm:px-6 xs:px-4"
             label="Enter Zip Code or City:"
             placeholder="Does not have to be where you live"
           />
           <IssuesCategoryDropdown
             icon="1"
-            className="text-white pb-2 px-20"
+            className="text-white pb-2 px-20 md:px-10 sm:px-6 xs:px-4"
             label="Click to choose a legal category"
             placeholder="Click to choose a legal category"
           />
           <OtherCategories/>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center sm:mt-4 xs:mt-4">
           <p className="text-left text-base p-4 text-white">
             Clients review LegalMatch lawyers
           </p>

@@ -1,7 +1,7 @@
 import CompanyLogo from "./CompanyLogo";
 import classNames from "classnames";
 
-function NavBar({children, logo, className}) {
+function Header({children, logo, className}) {
   const navBarContentWrapperClasses = classNames(
     '2xl:container 2xl:px-4',
     'xl:container xl:px-4',
@@ -25,24 +25,25 @@ function NavBar({children, logo, className}) {
     'xl:flex xl:grow xl:justify-start xl:pb-4 xl:pt-0',
     'lg:flex lg:grow lg:justify-start lg:pb-4 lg:pt-0',
     'md:flex md:grow-0 md:justify-center md:pb-4',
-    'sm:flex sm:grow-0 sm:justify-center sm:pb-4'
+    'sm:flex sm:grow-0 sm:justify-center sm:pb-4',
+    'xs:flex xs:grow-0 xs:justify-center xs:pb-4'
   );
 
 
   return (
-    <>
-      <nav className={className}>
+    <header className={className}>
+      <nav className="header__nav">
         <div className={navBarContentWrapperClasses}>
           <div className={navBarContentClasses}>
-            <CompanyLogo className="p-8" logo={logo} tagline="Find the right lawyer now"/>
+            <CompanyLogo className="p-8 md:p-6 sm:px-4 xs:px-2" logo={logo} tagline="Find the right lawyer now"/>
             <div className={childrenClasses}>
               {children}
             </div>
           </div>
         </div>
       </nav>
-    </>
+    </header>
   );
 }
 
-export default NavBar;
+export default Header;

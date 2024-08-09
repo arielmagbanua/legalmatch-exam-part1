@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import logo from "./assets/logo.svg";
 import CheckList from "./components/CheckList";
 import MainContent from "./components/MainContent";
@@ -16,11 +16,11 @@ function App() {
   return (
     <div className="app">
       <div className="app__container">
-        <NavBar logo={logo} className="app__nav-bar bg-white">
+        <Header logo={logo} className="app__nav-bar bg-white">
           <div className="flex grow items-center justify-end">
             <CheckList items={guarantees}/>
           </div>
-        </NavBar>
+        </Header>
         <MainContent className="app__container__main-content"/>
         <Footer logo={logo} className="bg-white"/>
       </div>
