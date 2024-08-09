@@ -5,6 +5,7 @@ import generateUUIDv4 from "../utils/uuid"
 function StarRating({rating, className, keyPrefix, max = 5, activeColor = 'text-amber-500', inactiveColor = 'text-gray-500'}) {
   const classes = classNames('grid grid-cols-5 gap-1', className)
 
+  // creates needed star icons
   const createStars = (count, color) => {
     return [...Array(count).keys()].map((_, index) => {
       if (!keyPrefix) {
@@ -18,6 +19,7 @@ function StarRating({rating, className, keyPrefix, max = 5, activeColor = 'text-
     });
   }
 
+  // renders the final star icons
   const renderedStars = (count, max) => {
     let stars = createStars(count, activeColor);
 

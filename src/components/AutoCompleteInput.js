@@ -14,6 +14,8 @@ function AutoCompleteInput({className, icon, label, placeholder}) {
   const [showSuggestion, setShowSuggestion] = useState(false);
 
   const suggestionBox = useRef();
+
+  // this hook enables for correctly dismissing overlays when user clicks other elements
   useDismissTarget(suggestionBox, setShowSuggestion);
 
   useEffect(() => {
@@ -26,6 +28,7 @@ function AutoCompleteInput({className, icon, label, placeholder}) {
     });
   }, []);
 
+  // this effect dismisses autocomplete when escape key is pressed
   useEffect(() => {
     const handleEsc = (event) => {
       if (event.key === 'Escape') {
