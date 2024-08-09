@@ -58,8 +58,22 @@ function Review({data, className}) {
     </div>
   );
 
+  const modalClasses = classNames(
+    'inset-x-[480px] inset-y-32',
+    '2xl:inset-x-[420px] 2xl:inset-y-32',
+    'xl:inset-x-[320px] xl:inset-y-32',
+    'lg:inset-x-[220px] lg:inset-y-32',
+    'md:inset-x-[85px] md:inset-y-32',
+    'sm:inset-x-[20px] sm:inset-y-32',
+    'xs:inset-x-[20px] xs:inset-y-32'
+  );
+
   const modal = (
-    <Modal onClose={handleClose} actionBar={modalActionBar} title="Client Reviews">
+    <Modal
+      className={modalClasses}
+      onClose={handleClose} actionBar={modalActionBar}
+      title="Client Reviews"
+    >
       <div className="flex justify-start items-center py-6">
         <ProfileImage imageSrc={lawyer.photo} alt={lawyer.name}/>
         <div className="ml-6 grow grid grid-cols-1">
