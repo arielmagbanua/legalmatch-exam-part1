@@ -18,6 +18,9 @@ function Header({logo, className}) {
     'lg:flex lg:flex-wrap',
     'md:flex md:flex-wrap',
     'sm:flex sm:flex-no-wrap',
+    'xs:flex xs:flex-no-wrap',
+    'xxs:flex xxs:flex-no-wrap',
+    '2xxs:flex 2xxs:flex-no-wrap'
   );
 
   const childrenClasses = classNames(
@@ -27,7 +30,9 @@ function Header({logo, className}) {
     'lg:flex lg:grow lg:justify-start lg:pb-4 lg:pt-0',
     'md:flex md:grow-0 md:justify-center md:pb-4',
     'sm:flex sm:grow-0 sm:justify-center sm:pb-4',
-    'xs:flex xs:grow-0 xs:justify-center xs:pb-4'
+    'xs:flex xs:grow-0 xs:justify-center xs:pb-4',
+    'xxs:flex xxs:grow-0 xxs:justify-center xxs:pb-4',
+    '2xxs:flex 2xxs:grow-0 2xxs:justify-center 2xxs:pb-4'
   );
 
   const guarantees = [

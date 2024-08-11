@@ -13,9 +13,6 @@ function Review({data, className}) {
   // destruct the data
   const {lawyer, overall, reviews} = data;
 
-  // the classes for main div
-  const classes = classNames('grid grid-cols-4', className);
-
   // format the date of the reviews
   const formattedReviews = reviews.map((review) => {
     return {...review, date: new Date(review.date)};
@@ -58,6 +55,10 @@ function Review({data, className}) {
     </div>
   );
 
+  // the classes for main div
+  const classes = classNames('grid grid-cols-4', className);
+
+
   const modalClasses = classNames(
     'inset-x-[480px] inset-y-32',
     '2xl:inset-x-[420px] 2xl:inset-y-32',
@@ -65,7 +66,9 @@ function Review({data, className}) {
     'lg:inset-x-[220px] lg:inset-y-32',
     'md:inset-x-[85px] md:inset-y-32',
     'sm:inset-x-[20px] sm:inset-y-32',
-    'xs:inset-x-[20px] xs:inset-y-32'
+    'xs:inset-x-[20px] xs:inset-y-32',
+    'xxs:inset-x-[20px] xxs:inset-y-28',
+    '2xxs:inset-x-[20px] 2xxs:inset-y-2'
   );
 
   const modal = (
