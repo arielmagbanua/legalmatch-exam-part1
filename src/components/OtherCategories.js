@@ -30,7 +30,8 @@ function OtherCategories({className}) {
     'lg:inset-x-[220px] lg:inset-y-60',
     'md:inset-x-[85px] md:inset-y-60',
     'sm:inset-x-[20px] sm:inset-y-60',
-    'xs:inset-x-[20px] xs:inset-y-60'
+    'xs:inset-x-[20px] xs:inset-y-60',
+    'xxs:inset-x-[20px] xxs:inset-y-60'
   );
 
   const otherCategoriesModal = showOtherCategoryModal && (
