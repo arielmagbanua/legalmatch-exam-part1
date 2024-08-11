@@ -84,7 +84,9 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
     'xl:inset-x-[320px] inset-y-[260px]',
     'lg:inset-x-[220px] inset-y-[260px]',
     'md:inset-x-[85px] inset-y-[260px]',
-    'sm:inset-x-[20px] inset-y-[260px]'
+    'sm:inset-x-[20px] inset-y-[260px]',
+    'xs:inset-x-[20px] inset-y-[260px]',
+    'xxs:inset-x-[20px] inset-y-[250px]',
   );
 
   const categoryModal = selectedCategory && (
