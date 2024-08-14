@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import {useState} from "react";
+import { useState } from "react";
 import Modal from "./Modal";
 import otherCategories from "../data/otherCategories.json";
 
-function OtherCategories({className}) {
+function OtherCategories({ className }) {
   const classes = classNames('text-center text-white', className);
 
   const [showOtherCategoryModal, setShowOtherCategoryModal] = useState(false);
@@ -31,7 +31,8 @@ function OtherCategories({className}) {
     'md:inset-x-[85px] md:inset-y-60',
     'sm:inset-x-[20px] sm:inset-y-60',
     'xs:inset-x-[20px] xs:inset-y-60',
-    'xxs:inset-x-[20px] xxs:inset-y-60'
+    'xxs:inset-x-[20px] xxs:inset-y-60',
+    '2xxs:inset-x-[20px] 2xxs:inset-y-60'
   );
 
   const otherCategoriesModal = showOtherCategoryModal && (

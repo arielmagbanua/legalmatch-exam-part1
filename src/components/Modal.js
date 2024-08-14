@@ -1,13 +1,13 @@
 import useBodyOverflowHidden from "../hooks/body-overflow-hidden";
 import ReactDOM from "react-dom";
-import {MdClose} from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import classNames from "classnames";
 
-function Modal({children, title, subTitle, onClose, actionBar, className}) {
+function Modal({ children, title, subTitle, onClose, actionBar, className }) {
   useBodyOverflowHidden();
 
   const modalContainerClasses = classNames(
-    'modal__content inset-x-80 inset-y-80 fixed py-6 px-10 bg-white rounded-xl',
+    'modal__content inset-x-80 inset-y-80 fixed py-6 px-10 bg-white rounded-xl z-30',
     className
   );
 
@@ -16,7 +16,7 @@ function Modal({children, title, subTitle, onClose, actionBar, className}) {
     renderedTitleBar = (
       <div className="modal__content__title border-b border-black py-1 pb-2 flex justify-between items-center">
         <p className="uppercase text-xl">{title}</p>
-        <MdClose className="text-xl cursor-pointer" onClick={onClose}/>
+        <MdClose className="text-xl cursor-pointer" onClick={onClose} />
       </div>
     );
   } else if (title && subTitle) {
@@ -27,13 +27,13 @@ function Modal({children, title, subTitle, onClose, actionBar, className}) {
           <p className="text-xs">{subTitle}</p>
         </div>
 
-        <MdClose className="text-xl cursor-pointer" onClick={onClose}/>
+        <MdClose className="text-xl cursor-pointer" onClick={onClose} />
       </div>
     );
   } else {
     renderedTitleBar = (
       <div className="modal__content__title py-1 pb-2 flex justify-end items-center">
-        <MdClose className="text-xl cursor-pointer" onClick={onClose}/>
+        <MdClose className="text-xl cursor-pointer" onClick={onClose} />
       </div>
     )
   }
