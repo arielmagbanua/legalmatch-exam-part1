@@ -1,12 +1,12 @@
 import classNames from "classnames";
-import {useRef, useState} from "react";
-import {FaChevronDown} from "react-icons/fa";
+import { useRef, useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
 import useDismissTarget from "../hooks/dissmiss-target";
 import issueCategories from "../data/issueCategories.json";
 import Modal from "./Modal";
 import CheckBox from "./CheckBox";
 
-function IssuesCategoryDropdown({className, icon, label, placeholder}) {
+function IssuesCategoryDropdown({ className, icon, label, placeholder }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showCategoryModal, setShowCategoryModal] = useState(false);
@@ -71,7 +71,7 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
   const renderedIssues = selectedCategory && (
     selectedCategory.issues.map((issue, index) => {
       return (
-        <CheckBox className="text-black" label={issue} key={`${selectedCategory.id}_${index}`}/>
+        <CheckBox className="text-black" label={issue} key={`${selectedCategory.id}_${index}`} />
       );
     })
   );
@@ -79,6 +79,7 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
   const issuesCategoryClasses = classNames('grid grid-cols-1 px-20', className);
 
   const modalClasses = classNames(
+    'modal__content--issue-categories',
     'inset-x-[490px] inset-y-[260px]',
     '2xl:inset-x-[420px] inset-y-[260px]',
     'xl:inset-x-[320px] inset-y-[260px]',
@@ -87,6 +88,7 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
     'sm:inset-x-[20px] inset-y-[260px]',
     'xs:inset-x-[20px] inset-y-[260px]',
     'xxs:inset-x-[20px] inset-y-[250px]',
+    '2xxs:inset-x-[20px] inset-y-[250px]',
   );
 
   const categoryModal = selectedCategory && (
@@ -120,7 +122,7 @@ function IssuesCategoryDropdown({className, icon, label, placeholder}) {
           <div className="flex flex-nowrap items-center justify-center h-12">
             <span className="mx-3 mr-4 text-white bg-amber-500 px-2.5 py-1 rounded-3xl text-xs">{icon}</span>
             {renderSelectedCategory}
-            <FaChevronDown className="text text-gray-400 mx-3"/>
+            <FaChevronDown className="text text-gray-400 mx-3" />
           </div>
         </div>
       </div>

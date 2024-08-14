@@ -1,11 +1,11 @@
 import TextInput from "./TextInput";
 import classNames from "classnames";
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import parser from "papaparse";
 import usZips from "../data/uszips.csv";
 import useDismissTarget from "../hooks/dissmiss-target";
 
-function AutoCompleteInput({className, icon, label, placeholder}) {
+function AutoCompleteInput({ className, icon, label, placeholder }) {
   const classes = classNames('grid grid-cols-1', className);
 
   const [keyword, setKeyword] = useState('');
@@ -59,13 +59,13 @@ function AutoCompleteInput({className, icon, label, placeholder}) {
     } else {
       // most likely the user is looking up for a city
       result = zipCodes.filter((data) => {
-          if (data.city) {
-            const city = data.city.toLowerCase();
-            return city.includes(value.toLowerCase());
-          }
-
-          return false;
+        if (data.city) {
+          const city = data.city.toLowerCase();
+          return city.includes(value.toLowerCase());
         }
+
+        return false;
+      }
       );
     }
 
@@ -92,14 +92,14 @@ function AutoCompleteInput({className, icon, label, placeholder}) {
     const formatted = `${zipData.city}, ${zipData.state_id} ${zipData.zip}`;
     return (
       <li className="py-2 cursor-pointer hover:text-blue-600"
-          key={zipData.zip}
-          onClick={() => handleSelect(formatted)}>{formatted}
+        key={zipData.zip}
+        onClick={() => handleSelect(formatted)}>{formatted}
       </li>
     )
   });
 
   const renderedSuggestions = showSuggestion && (
-    <div ref={suggestionBox} className="relative z-20">
+    <div ref={suggestionBox} className="relative z-20 border-1">
       <div className="absolute w-full bg-white rounded-2xl shadow-sm px-6 py-2">
         <div className="flex flex-col">
           <ol className="text-black">

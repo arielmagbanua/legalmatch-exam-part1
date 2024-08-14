@@ -2,7 +2,20 @@ import CompanyLogo from "./CompanyLogo";
 import classNames from "classnames";
 import CheckList from "./CheckList";
 
-function Header({logo, className}) {
+function Header({ logo, className }) {
+  const navHeaderClasses = classNames(
+    'fixed w-full h-[127px] shadow-sm z-20',
+    '2xl:h-[127px]',
+    'xl:h-[127px]',
+    'lg:h-[127px]',
+    'md:h-[127px]',
+    'sm:h-[127px]',
+    'xs:h-[240px]',
+    'xxs:h-[240px]',
+    '2xxs:h-[240px]',
+    className
+  );
+
   const navBarContentWrapperClasses = classNames(
     '2xl:container 2xl:px-4',
     'xl:container xl:px-4',
@@ -42,14 +55,14 @@ function Header({logo, className}) {
   ];
 
   return (
-    <header className={className}>
+    <header className={navHeaderClasses}>
       <nav className="header__nav">
         <div className={navBarContentWrapperClasses}>
           <div className={navBarContentClasses}>
-            <CompanyLogo className="p-8 md:p-6 sm:px-4 xs:px-2" logo={logo} tagline="Find the right lawyer now"/>
+            <CompanyLogo className="p-8 md:p-6 sm:px-4 xs:px-2" logo={logo} tagline="Find the right lawyer now" />
             <div className={childrenClasses}>
               <div className="flex grow items-center justify-end">
-                <CheckList items={guarantees}/>
+                <CheckList items={guarantees} />
               </div>
             </div>
           </div>
