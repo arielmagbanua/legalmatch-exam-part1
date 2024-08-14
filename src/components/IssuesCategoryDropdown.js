@@ -79,6 +79,7 @@ function IssuesCategoryDropdown({ className, icon, label, placeholder }) {
   const issuesCategoryClasses = classNames('grid grid-cols-1 px-20', className);
 
   const modalClasses = classNames(
+    'modal__content--issue-categories',
     'inset-x-[490px] inset-y-[260px]',
     '2xl:inset-x-[420px] inset-y-[260px]',
     'xl:inset-x-[320px] inset-y-[260px]',

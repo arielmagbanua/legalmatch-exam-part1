@@ -6,10 +6,148 @@ body {
   scroll-behavior: smooth;
 }
 
-li > svg {
+li>svg {
   padding-right: 6px;
 }
 
 .app__container {
   background: radial-gradient(circle at bottom center, #2c69cb, #032c6b);
+}
+
+@media only screen and (min-height: 600px) {
+  div.modal__content {
+    top: 10px;
+    bottom: 10px;
+  }
+
+  div.modal__content--other-categories {
+    top: 100px;
+    bottom: 100px;
+  }
+
+  div.modal__content--issue-categories {
+    top: 100px;
+    bottom: 100px;
+  }
+
+  div.modal__content__ratings {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  div.modal__content {
+    top: 90px;
+    bottom: 90px;
+  }
+
+  div.modal__content--other-categories {
+    top: 190px;
+    bottom: 190px;
+  }
+
+  div.modal__content--issue-categories {
+    top: 190px;
+    bottom: 190px;
+  }
+
+  div.modal__content__ratings {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-height: 720px) {
+  div.modal__content {
+    top: 100px;
+    bottom: 100px;
+  }
+
+  div.modal__content--other-categories {
+    top: 160px;
+    bottom: 160px;
+  }
+
+  div.modal__content--issue-categories {
+    top: 190px;
+    bottom: 190px;
+  }
+
+  div.modal__content__ratings {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-height: 860px) and (max-height: 960px) {
+  div.modal__content {
+    top: 160px;
+    bottom: 160px;
+  }
+
+  div.modal__content--other-categories {
+    top: 160px;
+    bottom: 160px;
+  }
+
+  div.modal__content__other-categories {
+    max-height: 440px;
+  }
+
+  div.modal__content--issue-categories {
+    top: 190px;
+    bottom: 190px;
+  }
+
+  div.modal__content__ratings {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-height: 980px) and (max-height: 1024px) {
+  div.modal__content {
+    top: 180px;
+    bottom: 180px;
+  }
+
+  div.modal__content--other-categories {
+    top: 220px;
+    bottom: 220px;
+  }
+
+  div.modal__content__other-categories {
+    max-height: 440px;
+  }
+
+  div.modal__content--issue-categories {
+    top: 280px;
+    bottom: 280px;
+  }
+
+  div.modal__content__ratings {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-height: 1056px) and (max-height: 1400px) {
+  div.modal__content {
+    top: 300px;
+    bottom: 300px;
+  }
+
+  div.modal__content--other-categories {
+    top: 420px;
+    bottom: 420px;
+  }
+
+  div.modal__content__other-categories {
+    max-height: 440px;
+  }
+
+  div.modal__content--issue-categories {
+    top: 280px;
+    bottom: 280px;
+  }
+
+  div.modal__content__ratings {
+    height: 256px;
+  }
 }

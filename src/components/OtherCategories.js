@@ -23,7 +23,7 @@ function OtherCategories({ className }) {
   })
 
   const otherCategoriesModalClasses = classNames(
-    'modal__content--issue-category',
+    'modal__content--other-categories',
     'inset-x-[480px] inset-y-32',
     '2xl:inset-x-[420px] 2xl:inset-y-60',
     'xl:inset-x-[320px] xl:inset-y-60',
@@ -42,7 +42,7 @@ function OtherCategories({ className }) {
       title="Other Categories"
       subTitle="Choose the category that best fits your case"
     >
-      <div className="grid grid-cols-2 gap-1 scroll-smooth overflow-scroll max-h-72 py-4">
+      <div className="modal__content__other-categories grid grid-cols-2 gap-1 scroll-smooth overflow-scroll max-h-72 py-4">
         {rendetedCategories}
       </div>
     </Modal>

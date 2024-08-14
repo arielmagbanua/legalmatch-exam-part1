@@ -7,7 +7,15 @@ function Modal({ children, title, subTitle, onClose, actionBar, className }) {
   useBodyOverflowHidden();
 
   const modalContainerClasses = classNames(
-    'modal__content inset-x-80 inset-y-80 fixed py-6 px-10 bg-white rounded-xl z-30',
+    'modal__content inset-x-80 inset-y-80 fixed py-6 px-10 bg-white rounded-xl z-30 border-2',
+    '2xl:py-6 2xl:px-10',
+    'xl:py-6 xl:px-10',
+    'lg:py-6 lg:px-10',
+    'md:py-6 md:px-10',
+    'sm:py-6 sm:px-10',
+    'xs:py-4 xs:px-6',
+    'xxs:py-2 xxs:px-4',
+    '2xxs:py-2 2xxs:px-4',
     className
   );
 
